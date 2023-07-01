@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Bio.Link Page</title>
+  
+  <!-- link rel="stylesheet" href="styles.css" -->
+  <!-- Include qrious.js from a local file -->
+  <!-- script src="js/qrious.min.js"></script -->
+
+  <!-- Your custom stylesheet and other scripts -->
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
+</head>
+<body>
+  <header>
+    <img src="images/my-profile-photo.jpg" alt="Your Photo" class="profile-photo">
+    <h1>Chinmay Mahata</h1>
+    <div class="social-icons">
+      <a href="https://instagram.com/yourprofile" target="_blank"><img src="images/instagram-logo.png" alt="Instagram" class="social-icon"></a>
+      <a href="https://twitter.com/yourprofile" target="_blank"><img src="images/twitter-logo.png" alt="Twitter" class="social-icon"></a>
+      <a href="https://facebook.com/yourprofile" target="_blank"><img src="images/facebook-logo.png" alt="Facebook" class="social-icon"></a>
+      <a href="https://linkedin.com/yourprofile" target="_blank"><img src="images/linkedin-logo.png" alt="Linkedin" class="social-icon"></a>
+      <a href="https://github.com/yourprofile" target="_blank"><img src="images/github-logo.png" alt="Github" class="social-icon"></a>
+    </div>
+    <p class="connect-message">Click to Connect</p>
+    <button class="share-button" onclick="sharePage()"><img src="images/share-logo.png" alt="Share"></button>
+  </header>
+
+  <main>
+    <ul id="links">
+      <!-- Add your links here -->
+      <li><a href="https://example.com">Website</a></li>
+      <li><a href="https://blog.com">Blog</a></li>
+      <li><a href="https://store.com">Store</a></li>
+    </ul>
+  </main>
+
+  <div id="share-modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2>Share Page</h2>
+      <div class="share-options">
+        <a href="whatsapp://send?text=Check out my bio page: your-bio-link-url" target="_blank" class="share-option">
+          <img src="images/whatsapp-logo.png" alt="WhatsApp" class="social-icon">
+        </a>
+        <a href="https://twitter.com/intent/tweet?url=your-bio-link-url&text=Check out my bio page" target="_blank" class="share-option">
+          <img src="images/twitter-logo.png" alt="Twitter" class="social-icon">
+        </a>
+        <a href="mailto:?subject=Check out my bio page&body=Here's my bio page: your-bio-link-url" target="_blank" class="share-option">
+          <img src="images/gmail-logo.png" alt="Email" class="social-icon">
+        </a>
+        <!-- button onclick="copyLink()" class="share-option"><img src="images/copy-link-logo.png" alt="Copy Link" class="social-icon"></button -->
+        <button onclick="copyLink()" class="share-option"><img src="images/copy-link-logo.png" alt="Copy Link" class="social-icon copy-link-logo"></button>
+
+        <!-- button onclick="copyLink()"><img src="images/copy-link-logo.png" alt="Copy Link" class="social-icon"></button -->
+      </div>
+      <div id="qrcode"></div>
+    </div>
+  </div>
+
+  <!-- script src="script.js"></script -->
+  <!-- Include qrious.js from a local file -->
+  <script src="js/qrious.min.js"></script>
+  <!-- Your custom JavaScript code -->
+  <script src="script.js"></script>
+</body>
+</html>
